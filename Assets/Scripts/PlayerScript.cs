@@ -94,7 +94,7 @@ public class PlayerScript : MonoBehaviour {
 		
 			
 			float input = Input.GetAxis("Vertical");
-			Debug.Log("Inut IS " + input);
+
 			if(input!=0f) {
 			
 			  if(onLadder) {

@@ -113,7 +113,7 @@ public bool lockMovement = false;
 	 
 	}
 
-	void UnlockMovement() {
+	public void UnlockMovement() {
 	  lockMovement = false;
 	}
 	

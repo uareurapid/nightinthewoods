@@ -83,7 +83,6 @@ public class EnemyScript : MonoBehaviour
 	{
 	  PlayerScript player = collision.gameObject.GetComponent<PlayerScript>();
 	  if(player!=null) {
-			Debug.Log("KILLLLLLLL IT HERE");
 	    player.KillPlayer();
 	  }
 	}
@@ -93,8 +92,6 @@ public class EnemyScript : MonoBehaviour
 
 	  PlayerScript player = collision.gameObject.GetComponent<PlayerScript>();
 	  if(player!=null) {
-			Debug.Log("KILLLLLLLL IT");
-
 	    player.KillPlayer();
 	  }
 	}

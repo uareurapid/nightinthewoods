@@ -65,9 +65,11 @@ public class SwipeScript : MonoBehaviour {
 						if(swipeType.x != 0.0f){
 							if(swipeType.x > 0.0f){
 								// MOVE RIGHT
+								Debug.Log("GO RIGHT");
 								player.MoveForward();
 							}else{
 								// MOVE LEFT
+								Debug.Log("GO LEFT");
 								player.MoveBackward();
 							}
 						}
@@ -122,10 +124,12 @@ public class SwipeScript : MonoBehaviour {
 						if(swipeType.x != 0.0f){
 							if(swipeType.x > 0.0f){
 								// MOVE RIGHT
+								Debug.Log("GO RIGHT 2");
 								player.MoveForward();
 							}else{
 								// MOVE LEFT
 								player.MoveBackward();
+								Debug.Log("GO LEFT 2");
 							}
 						}
 						/*else {
@@ -136,9 +140,11 @@ public class SwipeScript : MonoBehaviour {
 							if(swipeType.y > 0.0f){
 								// MOVE UP
 								if(!player.IsOnLadder()) {
+									Debug.Log("GO JUMP");
 								  player.Jump();
 								}
 								else {
+									Debug.Log("GO CLIBING");
 								  player.StartClibing();
 								}
 							}else{

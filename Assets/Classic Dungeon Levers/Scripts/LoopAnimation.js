@@ -16,12 +16,12 @@ function Update() {
 		}
 	}
 	else {
-		if(curAnim == 2) {
+		/*if(curAnim == 2) {
 			if(!animation.isPlaying) {
 				animation.CrossFade(anim1);
 				animation.wrapMode = WrapMode.Once;
 				curAnim = 1;
 			}
-		}
+		}*/
 	}
 }

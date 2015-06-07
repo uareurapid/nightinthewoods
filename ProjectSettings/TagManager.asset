@@ -19,6 +19,12 @@ TagManager:
   - Foreground
   - Ladder
   - 
+  - FxTemporaire
+  - Effect
+  - EFFECT
+  - Lever1
+  - MoveLadder
+  - 
   Builtin Layer 0: Default
   Builtin Layer 1: TransparentFX
   Builtin Layer 2: Ignore Raycast

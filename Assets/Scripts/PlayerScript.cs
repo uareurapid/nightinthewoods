@@ -251,9 +251,11 @@ public class PlayerScript : MonoBehaviour {
 
 					float speed = isClibing ? moveSpeed : -moveSpeed;
 					
-					if(speed * rigidbody2D.velocity.y < maxSpeed)
+					if(speed * rigidbody2D.velocity.y < maxSpeed) {
 						// ... add a force to the player.
+						Debug.Log("ADDING FORCE");
 						rigidbody2D.AddForce(Vector2.up * speed * moveForce);
+					}
 					
 					// If the player's vertical velocity is greater than the maxSpeed...
 					if(Mathf.Abs(rigidbody2D.velocity.y) > maxSpeed)
@@ -315,9 +317,14 @@ public class PlayerScript : MonoBehaviour {
 
 				    float speed = moveForward ? moveSpeed : -moveSpeed;
 				    
-					if(speed * rigidbody2D.velocity.x < maxSpeed)
+					if(moveSpeed * rigidbody2D.velocity.x < maxSpeed) {
 						// ... add a force to the player.
+					Debug.Log("ADDING FORCE 2");
 						rigidbody2D.AddForce(Vector2.right * speed * moveForce);
+						}
+						else {
+						Debug.Log("NOT MOVING MEN");
+						}
 					
 					// If the player's horizontal velocity is greater than the maxSpeed...
 					if(Mathf.Abs(rigidbody2D.velocity.x) > maxSpeed)
